@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { ActivityIndicator, FlatList, StyleSheet, View } from 'react-native';
 import { User, useGetUsersQuery } from '../common/generated/graphql';
 
@@ -6,6 +6,7 @@ import UserCard from '../common/components/UserCard';
 
 const Home = () => {
   const { data, loading } = useGetUsersQuery();
+  const navigation = useNavigation();
 
   if (loading) {
     return (
