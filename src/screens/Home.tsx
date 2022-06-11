@@ -6,7 +6,6 @@ import UserCard from '../common/components/UserCard';
 
 const Home = () => {
   const { data, loading } = useGetUsersQuery();
-  const navigation = useNavigation();
 
   if (loading) {
     return (
