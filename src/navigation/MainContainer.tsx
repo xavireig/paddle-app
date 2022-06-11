@@ -1,15 +1,14 @@
 import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 // Screens
-import HomeScreen from '../screens/Home';
-import DetailsScreen from '../screens/Details';
+import PlayersScreen from '../screens/Players';
+import CourtsScreen from '../screens/Courts';
 import SettingsScreen from '../screens/Settings';
 
 //Screen names
-const homeName = "Home";
+const homeName = "Players";
 const detailsName = "Find a court";
 const settingsName = "Settings";
 
@@ -17,7 +16,7 @@ const Tab = createBottomTabNavigator();
 
 function MainContainer() {
   return (
-    <NavigationContainer>
+    // <NavigationContainer>
       <Tab.Navigator
         initialRouteName={homeName}
         screenOptions={({ route }) => ({
@@ -54,12 +53,12 @@ function MainContainer() {
             ]
         })}>
 
-        <Tab.Screen name={homeName} component={HomeScreen} />
-        <Tab.Screen name={detailsName} component={DetailsScreen} />
+        <Tab.Screen name={homeName} component={PlayersScreen} />
+        <Tab.Screen name={detailsName} component={CourtsScreen} />
         <Tab.Screen name={settingsName} component={SettingsScreen} />
 
       </Tab.Navigator>
-    </NavigationContainer>
+    // </NavigationContainer>
   );
 }
 

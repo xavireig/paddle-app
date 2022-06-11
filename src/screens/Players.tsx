@@ -4,13 +4,13 @@ import { User, useGetUsersQuery } from '../common/generated/graphql';
 
 import UserCard from '../common/components/UserCard';
 
-const Home = () => {
+const Players = () => {
   const { data, loading } = useGetUsersQuery();
 
   if (loading) {
     return (
       <View style={styles.container}>
-        <ActivityIndicator color="#32B768" size="large" />
+        <ActivityIndicator color="#FFFFFF" size="large" />
       </View>
     );
   }
@@ -26,12 +26,12 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Players;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#66cc00',
   },
   characterList: {
     padding: 16,

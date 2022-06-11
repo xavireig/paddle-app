@@ -5,6 +5,8 @@ interface Props {
   data: {
     firstName?: string | null;
     lastName?: string | null;
+    email?: string | null;
+    ranking?: string | null;
   };
 }
 
@@ -12,8 +14,8 @@ const UserCard: React.FC<Props> = ({ data }) => {
    return (
     <View style={styles.container}>
       <View style={styles.details}>
-        <Text style={styles.text}>{data.firstName}</Text>
-        <Text style={styles.text}>{data.lastName}</Text>
+        <Text style={styles.text}>{data.firstName + ' ' + data.lastName}</Text>
+        <Text style={styles.text}>{data.email}</Text>
       </View>
     </View>
   );
@@ -27,11 +29,10 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     marginVertical: 8,
     paddingHorizontal: 8,
-    paddingVertical: 24,
+    paddingVertical: 15,
     backgroundColor: '#F0F0F0',
     flexDirection: 'row',
   },
-  image: { width: 70, height: 70 },
   details: {
     marginLeft: 8,
     justifyContent: 'space-between',
@@ -40,5 +41,6 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 16,
     fontWeight: 'bold',
+    lineHeight: 24
   },
 });

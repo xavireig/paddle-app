@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "273209139868",
+    "project_id": "paddle-dcde1",
+    "storage_bucket": "paddle-dcde1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273209139868:android:5a5f50e0956f35abb04359",
+        "android_client_info": {
+          "package_name": "xom.xrstudios.paddle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273209139868-h9m4pqik78k0jdmtbirkbr48tcvar876.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg0OHtPLn0uvaHCfkdWjdeiyAg3zfR7Xk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273209139868-h9m4pqik78k0jdmtbirkbr48tcvar876.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "273209139868-53mu6gb5bh8rs1mofdttl77be13hlbuf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.xrstudios.paddle"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

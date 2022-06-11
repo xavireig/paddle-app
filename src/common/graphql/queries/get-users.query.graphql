@@ -2,5 +2,7 @@ query GetUsers {
   users {
     firstName
     lastName
+    email
+    ranking
   }
 }

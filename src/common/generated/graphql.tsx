@@ -30,16 +30,17 @@ export type User = {
 export type GetUsersQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetUsersQuery = { __typename?: 'Query', users?: Array<{ __typename?: 'User', firstName?: string | null, lastName?: string | null } | null> | null };
+export type GetUsersQuery = { __typename?: 'Query', users?: Array<{ __typename?: 'User', firstName?: string | null, lastName?: string | null, email?: string | null, ranking?: string | null } | null> | null };
 
 
 export const GetUsersDocument = gql`
     query GetUsers {
-  users {
-    firstName
-    lastName
-  }
-}
+      users {
+        firstName
+        lastName
+        email
+      }
+    }
     `;
 
 /**

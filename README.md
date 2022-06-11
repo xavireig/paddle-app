@@ -2,6 +2,8 @@
 
 Basic Expo Go app that connects to Firebase GraphQL endpoint.
 
+Node version 16.15.1
+
 ## Install
 
 
@@ -21,3 +23,5 @@ Interesting resources:
 - https://rnfirebase.io/auth/usage
 - https://www.youtube.com/watch?v=yICiz12SdI4
 - https://developer.okta.com/blog/2019/11/14/react-native-login
+- Login: https://rnfirebase.io/auth/usage https://aboutreact.com/react-native-login-and-signup/
+- Auth flow screens: https://reactnavigation.org/docs/auth-flow
