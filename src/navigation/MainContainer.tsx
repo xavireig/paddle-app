@@ -5,11 +5,13 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 // Screens
 import PlayersScreen from '../screens/Players';
 import CourtsScreen from '../screens/Courts';
+import BookingsScreen from '../screens/Bookings';
 import SettingsScreen from '../screens/Settings';
 
 //Screen names
 const homeName = "Players";
-const detailsName = "Find a court";
+const mapName = "Map";
+const bookName = "Book a court"
 const settingsName = "Settings";
 
 const Tab = createBottomTabNavigator();
@@ -27,8 +29,11 @@ function MainContainer() {
             if (rn === homeName) {
               iconName = focused ? 'home' : 'home-outline';
 
-            } else if (rn === detailsName) {
+            } else if (rn === bookName) {
               iconName = focused ? 'calendar' : 'calendar-outline';
+
+            } else if (rn === mapName) {
+              iconName = focused ? 'map' : 'map-outline';
 
             } else if (rn === settingsName) {
               iconName = focused ? 'settings' : 'settings-outline';
@@ -54,7 +59,8 @@ function MainContainer() {
         })}>
 
         <Tab.Screen name={homeName} component={PlayersScreen} />
-        <Tab.Screen name={detailsName} component={CourtsScreen} />
+        <Tab.Screen name={mapName} component={CourtsScreen} />
+        <Tab.Screen name={bookName} component={BookingsScreen} />
         <Tab.Screen name={settingsName} component={SettingsScreen} />
 
       </Tab.Navigator>
