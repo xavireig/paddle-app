@@ -1,12 +1,13 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 interface Props {
   data: {
     firstName?: string | null;
     lastName?: string | null;
     email?: string | null;
-    ranking?: string | null;
+    ranking?: number | null;
   };
 }
 
@@ -14,8 +15,9 @@ const UserCard: React.FC<Props> = ({ data }) => {
    return (
     <View style={styles.container}>
       <View style={styles.details}>
-        <Text style={styles.text}>{data.firstName + ' ' + data.lastName}</Text>
+        <Text style={styles.player}>{data.firstName + ' ' + data.lastName} </Text>
         <Text style={styles.text}>{data.email}</Text>
+        <Text style={styles.ranking}>{data.ranking + '  '}<Ionicons name={'star'} size={15} color={'grey'} /></Text>
       </View>
     </View>
   );
@@ -40,7 +42,13 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 16,
-    fontWeight: 'bold',
-    lineHeight: 24
+    lineHeight: 24,
   },
+  player: {
+    fontWeight: 'bold'
+  },
+  ranking: {
+    fontSize: 16,
+    lineHeight: 26
+  }
 });

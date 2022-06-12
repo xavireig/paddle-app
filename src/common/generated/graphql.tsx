@@ -25,22 +25,24 @@ export type User = {
   email?: Maybe<Scalars['String']>;
   firstName?: Maybe<Scalars['String']>;
   lastName?: Maybe<Scalars['String']>;
+  ranking?: Maybe<Scalars['Int']>;
 };
 
 export type GetUsersQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetUsersQuery = { __typename?: 'Query', users?: Array<{ __typename?: 'User', firstName?: string | null, lastName?: string | null, email?: string | null, ranking?: string | null } | null> | null };
+export type GetUsersQuery = { __typename?: 'Query', users?: Array<{ __typename?: 'User', firstName?: string | null, lastName?: string | null, email?: string | null, ranking?: number | null } | null> | null };
 
 
 export const GetUsersDocument = gql`
     query GetUsers {
-      users {
-        firstName
-        lastName
-        email
-      }
-    }
+  users {
+    firstName
+    lastName
+    email
+    ranking
+  }
+}
     `;
 
 /**
