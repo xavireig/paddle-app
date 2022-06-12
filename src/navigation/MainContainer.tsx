@@ -10,8 +10,8 @@ import SettingsScreen from '../screens/Settings';
 
 //Screen names
 const homeName = "Players";
+const bookName = "Book a court";
 const mapName = "Map";
-const bookName = "Book a court"
 const settingsName = "Settings";
 
 const Tab = createBottomTabNavigator();
@@ -59,8 +59,8 @@ function MainContainer() {
         })}>
 
         <Tab.Screen name={homeName} component={PlayersScreen} />
-        <Tab.Screen name={mapName} component={CourtsScreen} />
         <Tab.Screen name={bookName} component={BookingsScreen} />
+        <Tab.Screen name={mapName} component={CourtsScreen} />
         <Tab.Screen name={settingsName} component={SettingsScreen} />
 
       </Tab.Navigator>
