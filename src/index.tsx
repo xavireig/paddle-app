@@ -32,7 +32,7 @@ const App = () => {
   return (
     <ApolloProvider client={apolloClient}>
       <NavigationContainer theme={MyTheme}>
-        <Drawer.Navigator useLegacyImplementation={true} initialRouteName="Home" screenOptions={{headerTintColor: '#66cc00', headerShown: false}}>
+        <Drawer.Navigator useLegacyImplementation={true} initialRouteName="Login" screenOptions={{headerTintColor: '#66cc00', headerShown: false}}>
           <Drawer.Screen name="Login" component={LoginScreen} />
           <Drawer.Screen name="Home" component={HomeScreen} />
         </Drawer.Navigator>
