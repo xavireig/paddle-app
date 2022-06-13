@@ -1,0 +1,9 @@
+{
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "lang": "en",
+  "name": "paddle-app",
+  "short_name": "paddle-app",
+  "start_url": "/?utm_source=web_app_manifest",
+  "orientation": "portrait"
+}
