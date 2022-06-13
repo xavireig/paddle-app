@@ -9,10 +9,10 @@
     "index.html": "/index.html",
     "manifest.json": "/manifest.json",
     "static/media/apple.png": "/static/media/apple.927ff216.png",
-    "static/media/bookings.png": "/static/media/bookings.4ef8fc99.png",
+    "static/media/bookings.png": "/static/media/bookings.f3d20a08.png",
     "static/media/discord.png": "/static/media/discord.2697378c.png",
     "static/media/facebook.png": "/static/media/facebook.795fce8e.png",
-    "static/media/logo.png": "/static/media/logo.4f667ef0.png",
+    "static/media/logo.png": "/static/media/logo.75a16739.png",
     "static/media/twitter.png": "/static/media/twitter.802534bf.png"
   },
   "entrypoints": [
